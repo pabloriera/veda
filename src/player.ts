@@ -149,7 +149,6 @@ export default class Player implements IPlayable {
             );
             newTexture.needsUpdate = true;
             this.textures[name] = newTexture;
-            // this.veda.setUniform(name, 't', newTexture);
             this.veda.setUniform(name, '1fv', array);
         } else {
             data.forEach((d, i) => {
